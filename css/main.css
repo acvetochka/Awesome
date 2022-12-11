@@ -107,7 +107,7 @@ img {
 }
 .nav__link {
   color: #333;
-  text-transform: capitalize;
+  font-variant: small-caps;
 }
 .nav__link::first-letter {
   font-size: 40px;
@@ -170,6 +170,7 @@ img {
   font-size: 24px;
   line-height: 1.5;
   color: #333;
+  font-variant: small-caps;
 }
 .advantage-card__text {
   font-size: 14px;
@@ -197,6 +198,7 @@ img {
   line-height: 1.5;
   color: #333;
   margin-bottom: 16px;
+  text-transform: uppercase;
 }
 .feature-card__item:nth-child(even) .feature-card__title {
   color: #fff;
@@ -236,10 +238,12 @@ img {
 .team__title {
   font-weight: 500;
   color: #333;
+  font-variant: small-caps;
 }
 .team__subtitle {
   font-size: 14px;
   line-height: 1.57;
+  font-variant: small-caps;
 }
 .team__text {
   letter-spacing: 0.04em;

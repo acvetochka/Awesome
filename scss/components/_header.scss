@@ -25,7 +25,9 @@
     &__link {
         @extend %link;
         color: $secondaryColor;
-        text-transform: capitalize;
+        // text-transform: capitalize;
+        font-variant: small-caps;
+
 
         &::first-letter {
             font-size: 40px;

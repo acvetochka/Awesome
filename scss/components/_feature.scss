@@ -29,6 +29,7 @@
         line-height: 1.5;
         color: $secondaryColor;
         margin-bottom: 16px;
+        text-transform: uppercase;
 
         .feature-card__item:nth-child(even) & {
             color: $tertiaryColor;

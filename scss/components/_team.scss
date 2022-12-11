@@ -34,11 +34,13 @@
     &__title {
         font-weight: 500;
         color: $secondaryColor;
+        font-variant: small-caps;
     }
 
     &__subtitle {
         font-size: 14px;
         line-height: 1.57;
+        font-variant: small-caps;
     }
 
     &__text {
