@@ -1,0 +1,36 @@
+.footer {
+    padding: 48px 0;
+    background-color: $footerColor;
+
+    &__container {
+        @extend %container;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+
+    &__copyright {
+        margin-right: 132px;
+    }
+
+    // .footer__support
+
+    &__support {
+        margin-right: 132px;
+    }
+}
+
+.footer-company {
+    margin-right: 32px;
+        
+    // .footer-company__title
+
+    &__title {
+
+    }
+}
+
+.footer-form {
+    margin-left: auto;
+}

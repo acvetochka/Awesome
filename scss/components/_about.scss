@@ -1,0 +1,15 @@
+.about {
+    @extend %section;
+
+    &__container {
+        @extend %container;
+        display: flex;
+        justify-content: space-between;
+        gap: 144px;
+    }
+
+    &__text {
+        letter-spacing: 0.04em;
+        margin-bottom: 40px;
+    }
+}

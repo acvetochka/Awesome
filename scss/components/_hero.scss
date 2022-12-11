@@ -1,0 +1,30 @@
+.hero-section {
+    padding-top: 32px;
+    padding-bottom: 64px;
+}
+
+.hero {
+    @extend %container;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__content {
+        max-width: 600px;
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 1.33;
+        color: $secondaryColor;
+        text-transform: uppercase;
+        margin-bottom: 24px;
+    }
+
+    &__text {
+        letter-spacing: 0.04em;
+        color: $primaryColor;
+        margin-bottom: 40px;
+    }
+}

@@ -1,0 +1,50 @@
+.team {
+    @extend %section;
+
+    &__container {
+        @extend %container;
+    }
+
+    &__list {
+        @extend %list;
+        display: flex;
+        gap: 32px;
+    }
+
+    &__item {
+        position: relative;
+        background: linear-gradient(358.27deg, rgba(100, 123, 100, 0.77) -118.86%,
+         rgba(100, 123, 100, 0) 25.62%, rgba(100, 123, 100, 0) 98.53%),
+          #FFFFFF;
+            border-radius: 8px;
+        padding: 24px 32px;
+    }
+
+    &__content {
+        position: absolute;
+        right: 32px;
+        top: 24px;
+
+    }
+
+    &__img {
+        margin-bottom: 24px;
+    }
+
+    &__title {
+        font-weight: 500;
+        color: $secondaryColor;
+    }
+
+    &__subtitle {
+        font-size: 14px;
+        line-height: 1.57;
+    }
+
+    &__text {
+        letter-spacing: 0.04em;
+        font-style: italic;
+
+    }
+
+}
