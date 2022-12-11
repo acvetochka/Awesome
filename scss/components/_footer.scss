@@ -6,31 +6,116 @@
         @extend %container;
         display: flex;
         justify-content: space-between;
-
     }
 
-
-    &__copyright {
-        margin-right: 132px;
+    &__logo {
+        margin-bottom: 16px;
     }
+}
 
-    // .footer__support
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap:16px;
+    max-width: 268px;
+    margin-right: 132px;
 
-    &__support {
-        margin-right: 132px;
+    // &__text {
+        
+    // }
+
+    // &__copy {
+       
+    // }
+
+    &__rights {
+        display: block;
+        margin-bottom: 8px;
     }
 }
 
 .footer-company {
     margin-right: 32px;
-        
-    // .footer-company__title
 
     &__title {
+        font-weight: 500;
+        color: $colorBrand;
+        margin-bottom: 24px;
+    }
 
+    &__list {
+        @extend %list;
+        color: $secondaryColor;
+    }
+
+    &__list a {
+        color:inherit;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__item {
+        margin-bottom: 12px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.footer-support {
+    margin-right: 132px;
+
+    &__title {
+        font-weight: 500;
+        color: $colorBrand;
+        margin-bottom: 24px;
+    }
+
+    &__list {
+        @extend %list;
+        color: $secondaryColor;
+    }
+
+    &__list a {
+        color: inherit;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__item {
+        margin-bottom: 12px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 }
 
 .footer-form {
-    margin-left: auto;
+    // margin-left: auto;
+
+    &__title {
+        font-weight: 500;
+        color: $colorBrand;
+        margin-bottom: 16px;
+    }
+
+    &__textarea {
+        width: 268px;
+        height: 144px;
+        display: block;
+        resize: none;
+        padding: 16px 24px;
+        outline: none;
+        border: none;
+        border-radius: 2px;
+        margin-bottom: 16px;
+    }
 }

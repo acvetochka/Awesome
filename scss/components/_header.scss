@@ -27,11 +27,6 @@
         color: $secondaryColor;
         // text-transform: capitalize;
         font-variant: small-caps;
-
-
-        &::first-letter {
-            font-size: 40px;
-        }
     }
 }
 
@@ -39,4 +34,5 @@
     @extend %btn;
     border-radius: 3px;
     padding: 12px 16px;
+    font-variant: small-caps;
 }
