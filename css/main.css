@@ -145,12 +145,23 @@ img {
   max-width: 600px;
 }
 .hero__title {
+  position: relative;
   font-weight: 500;
   font-size: 36px;
   line-height: 1.33;
   color: #333;
   text-transform: uppercase;
   margin-bottom: 24px;
+}
+.hero__title::before {
+  content: "";
+  position: absolute;
+  top: -56px;
+  left: 150px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-image: linear-gradient(197.92deg, #EF8031 -227.37%, rgba(239, 128, 49, 0.307045) 1.58%, rgba(239, 128, 49, 0) 103.02%);
 }
 .hero__text {
   letter-spacing: 0.04em;
@@ -170,6 +181,17 @@ img {
 
 .section-description {
   max-width: 460px;
+  position: relative;
+}
+.section-description::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: -136px;
+  right: -4px;
+  top: -23px;
+  height: 160px;
+  background-image: linear-gradient(164.26deg, rgba(239, 128, 49, 0) -335.51%, rgba(239, 128, 49, 0.15) -20.24%, rgba(239, 128, 49, 0) 119.45%);
 }
 
 .advantage-card {
@@ -220,6 +242,31 @@ img {
   color: #4F4F4F;
 }
 
+.feature__container {
+  position: relative;
+}
+.feature__container::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: -120px;
+  bottom: -32px;
+  width: 224px;
+  height: 224px;
+  background-image: url("../images/dots.png");
+}
+.feature__container::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  right: -120px;
+  bottom: -32px;
+  width: 600px;
+  height: 160px;
+  background-image: linear-gradient(164.26deg, rgba(239, 128, 49, 0) -335.51%, rgba(239, 128, 49, 0.15) -20.24%, rgba(239, 128, 49, 0) 119.45%);
+  transform: rotate(180deg);
+}
+
 .feature-card {
   display: flex;
   gap: 44px;
@@ -261,6 +308,18 @@ img {
   display: flex;
   justify-content: space-between;
   gap: 144px;
+  position: relative;
+}
+.about__container::after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  top: 40px;
+  left: 58px;
+  width: 570px;
+  height: 530px;
+  background: linear-gradient(197.92deg, rgba(239, 128, 49, 0) -227.37%, rgba(239, 128, 49, 0.15) 1.58%, rgba(239, 128, 49, 0) 103.02%);
 }
 .about__text {
   letter-spacing: 0.04em;
@@ -326,6 +385,7 @@ img {
 
 .footer-company {
   margin-right: 32px;
+  padding-right: 42px;
 }
 .footer-company__title {
   font-weight: 500;
@@ -351,6 +411,7 @@ img {
 
 .footer-support {
   margin-right: 132px;
+  padding-right: 42px;
 }
 .footer-support__title {
   font-weight: 500;

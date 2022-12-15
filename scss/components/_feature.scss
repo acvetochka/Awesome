@@ -3,6 +3,30 @@
 
     &__container {
         @extend %container;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            z-index: -1;
+            left: -120px;
+            bottom: -32px;
+            width: 224px;
+            height: 224px;
+            background-image: url('../images/dots.png');
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            z-index: -1;
+            right: -120px;
+            bottom: -32px;
+            width: 600px;
+            height: 160px;
+            background-image: $gradient;
+            transform: rotate(180deg);
+        }
     }
 }
 

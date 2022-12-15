@@ -1,6 +1,6 @@
 .advantage {
     @extend %section;
-
+   
     &__container {
         @extend %container;
         display: flex;
@@ -11,12 +11,25 @@
     &__text {
         letter-spacing: 0.04em;
         margin-bottom: 40px;
-        
     }
 }
 
+
 .section-description {
     max-width: 460px;
+    position: relative;
+            
+    &::before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        left: -136px;
+        right: -4px;
+        top: -23px;
+        // width: 600px;
+        height: 160px;
+        background-image: $gradient;
+    }
 }
 
 .advantage-card {
